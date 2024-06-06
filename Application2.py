@@ -47,14 +47,7 @@ def copy_graph(graph):
         new_graph[node] = set(graph[node])
     return new_graph
 
-def delete_node(ugraph, node):
-    """
-    Delete a node from an undirected graph
-    """
-    neighbors = ugraph[node]
-    ugraph.pop(node)
-    for neighbor in neighbors:
-        ugraph[neighbor].remove(node)
+"""remove some part """
     
 def targeted_order(ugraph):
     """
